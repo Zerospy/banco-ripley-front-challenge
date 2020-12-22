@@ -33,7 +33,7 @@ handleChangeRut(event){
       const rut = event.target;
     console.log(this.state.rut);
     event.preventDefault();
-    fetch(`https://challenge-banco-ripley.herokuapp.com/api/${this.state.rut}`, {
+    fetch(`https://cors-anywhere.herokuapp.com/https://challenge-banco-ripley.herokuapp.com/api/${this.state.rut}`, {
         method: "GET"
     })
     .then(res=>res.json())
